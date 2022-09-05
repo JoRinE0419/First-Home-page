@@ -1,0 +1,71 @@
+@charset "utg-8";
+/* 인코딩시 한국어가 깨지지 않도록 한다. */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400');
+/* 구글폰트 */
+
+*{  
+    margin:0;
+    padding:0;
+}
+/* 하나의 document에 하나의 doctype. */
+/* 그리고 doctype에는 margin과 padding이 기본적으로 세팅되어 있다. */
+/* 기본 세팅된 걸 지우기 위해서, 전체를 리셋 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+}
+/* 모든 요소의 marign과 padding을 없애줘야 함. */
+/* 이제부터는 내가 꾸민대로 할 거니까 초기화 해준다. */
+
+a{
+    color:ingerit;
+    /* 기존 세팅된 것을 가져오는거 */
+    text-decoration: none;
+    /* a태그 기능은 그대로 남아있고, css  색상만 제거 */
+}
+/* a태그의 보라색글씨 없애주기 */
+/* a태그의 기능은 있으나, css만 없는 상태 */
+
+li{
+    list-style: none;
+    /* 목록 디자인을 제거 */
+}
+
+address,em,i{
+    font-style: none;
+    /* 주소, 이메일, 이태릭체에 글꼴 스타일 초기화(기울임체 초기화) */    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-style: inherit;
+    /* h1~h6까지 기존 font-style 상속 */
+}
+
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+/* color는 기존 값쓰고 텍스트 밑줄은 none으로 지정 */
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+/* body에 걸어야 모든 글씨체가 바뀐다. */
+/* 1. 기본세팅 종료 (리셋과정) */
